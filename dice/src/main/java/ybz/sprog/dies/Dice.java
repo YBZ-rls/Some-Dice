@@ -6,7 +6,7 @@ import java.util.Random;
  * Base Dice Object
  * 
  * @author YBZ
- * @version 0.1.0
+ * @version 0.2.0
  */
 public abstract class Dice
 {
@@ -19,10 +19,15 @@ public abstract class Dice
     /**
      * init will initialize value and Random
      * 
-     * @since 0.1.0
+     * @param maxValue of dice
+     * @throws IllegalArgumentException if maxValue <= 1
+     * @since 0.2.0
      */
-    public Dice() 
+    public Dice(int maxValue) 
     {
+        if (maxValue <= 1)
+            throw new IllegalArgumentException("value must be a possitive integer greater than 1");
+        this.maxValue = maxValue;
         this.value = 1;
         this.RAND = new Random();
     }
@@ -36,6 +41,17 @@ public abstract class Dice
     {
         this.value = RAND.nextInt(this.maxValue)+1;
     }
+
+    /**
+     * gets max value of dice
+     * 
+     * @return maxValue field
+     * @since 0.2.0
+     */
+    public int getMaxValue() 
+    {
+        return this.maxValue;
+    };
 
     /**
      * gets dice value
