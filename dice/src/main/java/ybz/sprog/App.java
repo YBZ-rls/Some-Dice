@@ -1,10 +1,15 @@
 package ybz.sprog;
 
 /**
- * Hello world!
+ * Main application
+ * 
+ * @author YBZ
+ * @version 0.0.0
  */
-public class App {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+public class App
+{
+    public static void main(String[] args) 
+    {
+        // nothing to see here yet
     }
 }

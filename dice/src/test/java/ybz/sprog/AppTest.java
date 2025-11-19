@@ -1,19 +1,23 @@
 package ybz.sprog;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
 
 /**
- * Unit test for simple App.
+ * Unit tests for App.
+ * 
+ * @author YBZ
+ * @version 0.0.0
  */
-public class AppTest {
+public class AppTest
+{
 
     /**
-     * Rigorous Test :-)
+     * very accurate test
      */
     @Test
-    public void shouldAnswerWithTrue() {
+    public void shouldAnswerWithTrue()
+    {
         assertTrue(true);
     }
 }
